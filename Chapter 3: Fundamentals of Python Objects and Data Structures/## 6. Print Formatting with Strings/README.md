@@ -10,5 +10,13 @@ This is an older method of string interpolation that uses curly braces `{}` as p
 ```python
 # Simple string insertion
 print("This is a {}.".format("string"))
-
 # Output: This is a string.
+
+print('This is a string {}'.format('INSERTED'))
+# Output: This is a string INSERTED
+
+print('The {0} {0} {0}'.format('fox', 'brown', 'quick'))
+# Output: The fox fox fox
+
+print('The {q} {b} {f}'.format(f='fox',b='brown',q='quick'))
+# Output: The quick brown fox
